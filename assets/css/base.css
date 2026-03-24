@@ -1,8 +1,25 @@
+body{
+    background-color: #171717;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 25px;
+    justify-self: center;
+}
+
 .navbar{
     list-style-type: none;
 }
 
 .navbar li{
     float: left;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar a.active{
+    border-bottom: 2px solid  #D4AF37;
 }

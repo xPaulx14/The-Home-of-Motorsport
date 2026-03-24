@@ -1,0 +1,132 @@
+:root {
+    --bg:       #0a0a0f;
+    --surface:  #12121a;
+    --surface2: #1c1c28;
+    --border:   #2a2a3d;
+    --accent:   #e8003a;
+    --text:     #e8e8f0;
+    --muted:    #6b6b88;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+header {
+    background: var(--surface);
+    border-bottom: 2px solid var(--accent);
+    padding: 28px 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+header h1 span {
+    color: var(--accent);
+}
+
+main {
+    padding: 40px 48px;
+    overflow-x: auto;
+}
+
+#kalender-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+#kalender-table thead tr {
+    border-bottom: 2px solid var(--border);
+}
+
+#kalender-table th {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 12px 16px;
+    text-align: left;
+}
+
+td {
+    padding: 14px 16px;
+    vertical-align: middle;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+}
+
+tbody tr.hover {
+    background: var(--surface2);
+}
+
+tbody tr.next {
+    background: rgba(232, 0, 58, 0.08);
+    border-left: 3px solid var(--accent);
+}
+
+tbody tr.past {
+    opacity: 0.4;
+}
+
+.series-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.series-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.serie-F1       { background: rgba(225,6,0,0.12);  color: #ff4a47; border: 1px solid rgba(225,6,0,0.3); }
+.serie-dot-F1   { background: #e10600; }
+
+.serie-WEC      { background: rgba(0,180,216,0.12); color: #4ecde8; border: 1px solid rgba(0,180,216,0.3); }
+.serie-dot-WEC  { background: #00b4d8; }
+
+.serie-DTM      { background: rgba(255,215,0,0.10); color: #ffd700; border: 1px solid rgba(255,215,0,0.3); }
+.serie-dot-DTM  { background: #ffd700; }
+
+.serie-NASCAR   { background: rgba(0,48,135,0.25);  color: #6b9fff; border: 1px solid rgba(0,48,135,0.5); }
+.serie-dot-NASCAR { background: #3a7fff; }
+
+.serie-WRC      { background: rgba(0,192,75,0.12);  color: #3ddb7a; border: 1px solid rgba(0,192,75,0.3); }
+.serie-dot-WRC  { background: #00c04b; }
+
+.serie-MotoGP   { background: rgba(204,0,0,0.12);   color: #ff6060; border: 1px solid rgba(204,0,0,0.3); }
+.serie-dot-MotoGP { background: #cc0000; }
+
+/*bei 3g aufgehört*/

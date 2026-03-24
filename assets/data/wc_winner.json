@@ -1,0 +1,37 @@
+[
+    {
+        "series": "Formula 1",
+        "winner": "Lando Norris",
+        "team": "McLaren"
+    },
+    {
+        "series": "WEC",
+        "winner": "Antonio Giovinazzi, James Calado, Alessandro Pier Guidi",
+        "team": "Ferrari AF Corse"
+    },
+    {
+        "series": "DTM",
+        "winner": "Ayhancan Güven",
+        "team": "Manthey EMA"
+    },
+    {
+        "series": "Nascar",
+        "winner": "Tyler Reddick",
+        "team": "23XI Racing"
+    },
+    {
+        "series": "Indycar",
+        "winner": "Alex Palou",
+        "team": "Chip Ganassi Racing"
+    },
+    {
+        "series": "WRC",
+        "winner": "Sébastien Ogier",
+        "team": "Toyota Racing"
+    },
+    {
+        "series": "MotoGP",
+        "winner": "Marc Márquez",
+        "team": "Ducati Lenovo Team"
+    }
+]
