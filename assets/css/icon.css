@@ -1,0 +1,165 @@
+:root {
+    --accent: #D4AF37;
+    --border: #C0C0C0;
+    --bg:     #0a0a0f;
+}
+
+body {
+    background: var(--bg);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.driver-card {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0;
+    transition: 0.3s;
+    border: 4px solid var(--border);
+    position: relative;
+}
+
+.driver-card:hover {
+    box-shadow: 0 8px 16px rgba(192, 192, 192, 0.4);
+    transform: translateY(-5px);
+}
+
+.driver-card > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.driver-name {
+    padding: 15px;
+}
+
+.driver-name h4 {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.driver-name p {
+    margin-top: 5px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.overlay-driver {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(20, 18, 28, 0.97);
+}
+
+.driver-card:hover .overlay-driver {
+    opacity: 1;
+}
+
+.driver-text {
+    color: white;
+    padding-left: 10%;
+    padding-top: 10%;
+    margin-top: 20px;
+}
+
+.driver-text p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 6px 0;
+    padding-right: 10%;
+    font-size: 17px;
+}
+
+.card-header-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    z-index: 1;
+}
+
+.driver-flag {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.driver-number {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.driver-card:hover .card-header-info {
+    opacity: 0;
+}
+
+.hidden { display: none; }
+
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+.filter-bar button {
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    appearance: none;
+    background-color: var(--accent);
+    font-weight: 600;
+}
+
+.filter-bar button.active-filter {
+    background-color: transparent;
+    color: var(--accent);
+}
+
+@media (max-width: 1300px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .driver-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .filter-bar button {
+        padding: 10px 2%;
+    }
+}
