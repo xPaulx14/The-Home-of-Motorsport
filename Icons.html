@@ -26,27 +26,113 @@
     </ul>
 
         <div class="filter-bar">
-        <button class="formula_1">F1</button>
-        <button class="wec">WEC</button>
-        <button class="dtm">DTM</button>
-        <button class="nascar">Nascar</button>
-        <button class="indycar">Indycar</button>
-        <button class=wrc>WRC</button>
-        <button class="motogp">MotoGP</button>
+            <button data-filter="formula_1">F1</button>
+            <button data-filter="wec">WEC</button>
+            <button data-filter="dtm">DTM</button>
+            <button data-filter="nascar">Nascar</button>
+            <button data-filter="indycar">Indycar</button>
+            <button data-filter="wrc">WRC</button>
+         <button data-filter="motogp">MotoGP</button>
         </div>
+       
 
-            <!-- Formula 1-->
-        <div class="driver-card formula_1">
-            <div class="card-header-info">
-            <img class="driver-flag" src="assets/media/images/flags/gb.svg" alt="Great-Britain">
+ 
+ <div class="grid-container">
+
+           <!-- Formula 1-->    
+
+    <div class="driver-card" data-driver="hamilton" data-series="formula_1">
+        <div class="card-header-info">
+            <img class="driver-flag" src="assets/media/images/flags/gb.svg" alt="Great Britain">
             <span class="driver-number">#44</span>
         </div>
-             <img src="./assets/media/images/drivers/Lewis_Hamilton.png" alt="Lewis Hamilton">
-        <div class="driver-name">
-             <h4>Lewis Hamilton</h4>
-            <p>Formula 1</p>
-         </div>
+        <img src="./assets/media/images/drivers/Lewis_Hamilton.png" alt="Lewis Hamilton">
+        <div class="overlay-driver">
+            <div class="driver-text"></div>
         </div>
+        <div class="driver-name">
+            <h4>Lewis Hamilton</h4>
+            <p>Formula 1</p>
+        </div>
+    </div>
+
+    <div class="driver-card" data-driver="schumacher" data-series="formula_1">
+        <div class="card-header-info">
+            <img class="driver-flag" src="assets/media/images/flags/de.svg" alt="Germany">
+            <span class="driver-number">#7</span>
+        </div>
+        <img src="./assets/media/images/drivers/Lewis_Hamilton.png" alt="Michael Schumacher">
+        <div class="overlay-driver">
+            <div class="driver-text"></div>
+        </div>
+        <div class="driver-name">
+            <h4>Michael Schumacher</h4>
+            <p>Formula 1</p>
+        </div>
+    </div>
+
+        <div class="driver-card" data-driver="senna" data-series="formula_1">
+        <div class="card-header-info">
+            <img class="driver-flag" src="assets/media/images/flags/br.svg" alt="Deutschland">
+            <span class="driver-number">#2</span>
+        </div>
+        <img src="./assets/media/images/drivers/Lewis_Hamilton.png" alt="Ayrton Senna">
+        <div class="overlay-driver">
+            <div class="driver-text"></div>
+        </div>
+        <div class="driver-name">
+            <h4>Ayrton Senna</h4>
+            <p>Formula 1</p>
+        </div>
+    </div>
+
+        <div class="driver-card" data-driver="prost" data-series="formula_1">
+        <div class="card-header-info">
+            <img class="driver-flag" src="assets/media/images/flags/fr.svg" alt="France">
+            <span class="driver-number">#2</span>
+        </div>
+        <img src="./assets/media/images/drivers/Lewis_Hamilton.png" alt="Alain Prost">
+        <div class="overlay-driver">
+            <div class="driver-text"></div>
+        </div>
+        <div class="driver-name">
+            <h4>Alain Prost</h4>
+            <p>Formula 1</p>
+        </div>
+    </div>
+
+
+           <!-- WEC-->    
+        <div class="driver-card" data-driver="tomkristensen" data-series="wec">
+        <div class="card-header-info">
+            <img class="driver-flag" src="assets/media/images/flags/dk.svg" alt="Denmark">
+            <span class="driver-number">#1</span>
+        </div>
+        <img src="./assets/media/images/drivers/Lewis_Hamilton.png" alt="Tom Kristensen">
+        <div class="overlay-driver">
+            <div class="driver-text"></div>
+        </div>
+        <div class="driver-name">
+            <h4>Tom Kristensen</h4>
+            <p>WEC</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
 
@@ -66,13 +152,7 @@
 
 
 
-
-
-
-
-
-
-
+    <script src="./assets/js/icon.js"></script>
     <script src="./assets/js/navbar.js"></script>
 </body>
 </html> 

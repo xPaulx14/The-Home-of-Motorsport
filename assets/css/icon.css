@@ -25,11 +25,12 @@ body {
     padding: 0;
     transition: 0.3s;
     border: 4px solid var(--border);
+    margin-top: 0;
     position: relative;
 }
 
 .driver-card:hover {
-    box-shadow: 0 8px 16px rgba(192, 192, 192, 0.4);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
     transform: translateY(-5px);
 }
 
@@ -88,6 +89,12 @@ body {
     font-size: 17px;
 }
 
+.driver-text p span {
+    text-align: right;
+    flex: 1;
+    padding-left: 8px;
+}
+
 .card-header-info {
     position: absolute;
     top: 10px;
@@ -121,7 +128,7 @@ body {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -145,21 +152,26 @@ body {
     background-color: transparent;
     color: var(--accent);
 }
+.filter-bar .ferrari { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .red-bull { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .aston-martin { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .mercedes { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .mclaren { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .alpine { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .williams { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .haas { background-color: #B6BABD; border-color: #B6BABD; }
+.filter-bar .audi { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .vcarb { background-color: #C0C0C0; border-color: #C0C0C0; }
+.filter-bar .caddilac { background-color: #C0C0C0; border-color: #C0C0C0; }
 
-@media (max-width: 1300px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .driver-card {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-    .filter-bar button {
-        padding: 10px 2%;
-    }
-}
+.filter-bar button.active-filter.ferrari { background-color: transparent; }
+.filter-bar button.active-filter.red-bull { background-color: transparent; }
+.filter-bar button.active-filter.aston-martin { background-color: transparent; }
+.filter-bar button.active-filter.mercedes { background-color: transparent; }
+.filter-bar button.active-filter.mclaren { background-color: transparent; }
+.filter-bar button.active-filter.alpine { background-color: transparent; }
+.filter-bar button.active-filter.williams { background-color: transparent; }
+.filter-bar button.active-filter.haas { background-color: transparent; }
+.filter-bar button.active-filter.audi { background-color: transparent; }
+.filter-bar button.active-filter.vcarb { background-color: transparent; }
+.filter-bar button.active-filter.caddilac { background-color: transparent; }

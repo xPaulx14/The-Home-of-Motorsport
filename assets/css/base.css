@@ -1,16 +1,21 @@
-body{
+body {
     background-color: #171717;
     font-family: "Roboto Flex", sans-serif;
     font-size: 25px;
     justify-self: center;
 }
 
-.navbar{
+.navbar {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar li{
-    float: left;
+.navbar li {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -20,6 +25,6 @@ body{
     color: #ffffff;
 }
 
-.navbar a.active{
-    border-bottom: 2px solid  #D4AF37;
+.navbar a.active {
+    border-bottom: 2px solid #D4AF37;
 }
