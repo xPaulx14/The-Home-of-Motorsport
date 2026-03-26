@@ -39,7 +39,6 @@
     "career": "1980–1993",
     "teams": ["McLaren", "Renault", "Ferrari", "Williams"]
   },
-
   "tomkristensen": {
     "titles": 4,
     "races": 397,
@@ -51,23 +50,25 @@
     "teams": ["Joest Racing", "Audi Sport", "Bentley"]
   },
   "jackyickx": {
-    "lemans_wins": 6,
-    "lemans_starts": 24,
-    "f1_wins": 8,
+    "titles": 5,
+    "races": 248,
+    "wins": 52,
+    "poles": 36,
+    "podiums": 101,
+    "fastest_laps": 36,
     "career": "1969–1983",
     "teams": ["Ford", "Gulf Mirage", "Porsche"]
   },
   "andrelotterer": {
-    "titles": 4,
-    "races": 397,
-    "wins": 59,
-    "poles": 44,
-    "podiums": 146,
-    "fastest_laps": 52,
+    "titles": 5,
+    "races": 347,
+    "wins": 41,
+    "poles": 27,
+    "podiums": 125,
+    "fastest_laps": 27,
     "career": "2009–present",
     "teams": ["Audi Sport", "Porsche", "Peugeot"]
   },
-
   "berndschneider": {
     "titles": 5,
     "races": 236,
@@ -78,113 +79,129 @@
     "teams": ["Mercedes-AMG"]
   },
   "klausludwig": {
-    "titles": 3,
-    "wins": 23,
-    "career": "1988–2000",
-    "teams": ["Mercedes-AMG", "Ford"]
+    "titles": 6,
+    "races": 500,
+    "wins": 103,
+    "poles": 75,
+    "fastest_laps": 79,
+    "career": "1970–1996",
+    "teams": ["Ford", "Mercedes-AMG", "Porsche"]
   },
   "garypaffett": {
     "titles": 2,
+    "races": 198,
     "wins": 23,
-    "career": "2003–2018",
+    "poles": 17,
+    "fastest_laps": 14,
+    "career": "2001–2018",
     "teams": ["Mercedes-AMG"]
   },
-
   "richardpetty": {
     "titles": 7,
-    "races": 1185,
+    "races": 1184,
     "wins": 200,
-    "poles": 127,
+    "poles": 123,
+    "fastest_laps": 0,
     "career": "1958–1992",
     "teams": ["Petty Enterprises"]
   },
   "daleearnhardt": {
-    "titles": 7,
+    "titles": 11,
     "races": 676,
-    "wins": 76,
-    "daytona500_wins": 1,
+    "wins": 108,
+    "poles": 26,
+    "fastest_laps": 0,
     "career": "1975–2001",
-    "teams": ["Rod Osterlund", "Richard Childress Racing"]
+    "teams": ["RCR", "Rod Osterlund"]
   },
   "jimmiejohnson": {
     "titles": 7,
-    "wins": 83,
-    "daytona500_wins": 2,
-    "career": "2002–2020",
-    "teams": ["Hendrick Motorsports"]
+    "races": 814,
+    "wins": 91,
+    "poles": 41,
+    "fastest_laps": 31,
+    "career": "2001–present",
+    "teams": ["Hendrick Motorsports", "Legacy Motor Club"]
   },
-
   "ajfoyt": {
-    "championships": 7,
-    "races": 369,
-    "wins": 67,
-    "indy500_wins": 4,
-    "career": "1957–1993",
-    "teams": ["Self-entered / various"]
+    "titles": 12,
+    "races": 500,
+    "wins": 159,
+    "poles": 62,
+    "fastest_laps": 0,
+    "career": "1955–1993",
+    "teams": ["A.J. Foyt Enterprises"]
   },
   "marioandretti": {
-    "championships": 4,
-    "races": 407,
-    "wins": 52,
-    "indy500_wins": 1,
-    "career": "1962–1994",
-    "teams": ["various"]
+    "titles": 6,
+    "races": 879,
+    "wins": 111,
+    "poles": 109,
+    "fastest_laps": 34,
+    "career": "1959–1994",
+    "teams": ["Newman/Haas", "Lotus", "Ferrari"]
   },
   "scottdixon": {
-    "championships": 6,
-    "races": 408,
+    "titles": 6,
+    "races": 419,
     "wins": 59,
-    "indy500_wins": 1,
+    "poles": 28,
+    "fastest_laps": 45,
     "career": "2001–present",
     "teams": ["Chip Ganassi Racing"]
   },
-
   "sebastienloeb": {
-    "titles": 9,
+    "titles": 10,
+    "races": 184,
     "wins": 80,
-    "podiums": 120,
-    "career": "2002–2022",
-    "teams": ["Citroën", "Ford", "Hyundai", "M-Sport"]
+    "poles": 0,
+    "fastest_laps": 939,
+    "career": "2002–present",
+    "teams": ["Citroën", "Hyundai", "Ford"]
   },
   "sebastienogier": {
-    "titles": 8,
-    "wins": 61,
-    "podiums": 100,
-    "career": "2009–present",
-    "teams": ["VW", "M-Sport", "Citroën", "Toyota"]
+    "titles": 10,
+    "races": 205,
+    "wins": 67,
+    "poles": 0,
+    "fastest_laps": 813,
+    "career": "2008–present",
+    "teams": ["Citroën", "VW", "M-Sport Ford", "Toyota"]
   },
   "colinmcrae": {
     "titles": 1,
+    "races": 146,
     "wins": 25,
-    "career": "1992–2006",
+    "poles": 0,
+    "fastest_laps": 474,
+    "career": "1987–2003",
     "teams": ["Subaru", "Ford", "Citroën"]
   },
-
-  "valentino_rossi": {
-    "titles": 7,
-    "total_titles": 9,
-    "races": 372,
-    "wins": 89,
-    "podiums": 199,
-    "poles": 55,
-    "career": "2000–2021",
-    "teams": ["Honda", "Yamaha", "Ducati"]
+  "valentinorossi": {
+    "titles": 9,
+    "races": 432,
+    "wins": 115,
+    "poles": 65,
+    "fastest_laps": 96,
+    "career": "1996–2021",
+    "teams": ["Nastro Azzurro", "Nastro Azzurro Honda", "Yamaha", "Ducati"]
   },
-  "marc_marquez": {
-    "titles": 7,
-    "races": 207,
-    "wins": 73,
-    "podiums": 156,
-    "poles": 74,
+  "marcmarquez": {
+    "titles": 9,
+    "races": 270,
+    "wins": 86,
+    "poles": 94,
+    "fastest_laps": 76,
     "career": "2013–present",
-    "teams": ["Honda", "Gresini Ducati"]
+    "teams": ["Repsol Honda", "Gresini Ducati"]
   },
-  "giacomo_agostini": {
-    "titles": 8,
-    "total_titles": 15,
-    "races": 120,
-    "wins": 68,
-    "career": "1963–1977",
+  "giacomoagostini": {
+    "titles": 15,
+    "races": 207,
+    "wins": 122,
+    "poles": 0,
+    "fastest_laps": 117,
+    "career": "1964–1977",
     "teams": ["MV Agusta", "Yamaha"]
   }
 }

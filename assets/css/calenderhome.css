@@ -3,7 +3,7 @@
     --surface:  #12121a;
     --surface2: #1c1c28;
     --border:   #2a2a3d;
-    --accent:   #e8003a;
+    --accent:   #d4af37;
     --text:     #e8e8f0;
     --muted:    #6b6b88;
 }
@@ -46,6 +46,8 @@ header h1 span {
 main {
     padding: 40px 48px;
     overflow-x: auto;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 #kalender-table {
@@ -126,11 +128,14 @@ tbody tr.past {
 .series-WRC      { background: rgba(0,192,75,0.12);  color: #3ddb7a; border: 1px solid rgba(0,192,75,0.3); }
 .series-dot-WRC  { background: #00c04b; }
 
-.series-MotoGP   { background: rgba(204,0,0,0.12);   color: #ff6060; border: 1px solid rgba(204,0,0,0.3); }
-.series-dot-MotoGP { background: #cc0000; }
+.series-MotoGP   { background: rgba(204,0,0,0.12);   color: #ffa260; border: 1px solid rgba(204,0,0,0.3); }
+.series-dot-MotoGP { background: #df5d00; }
+
+.series-Indycar   { background: rgba(204,0,0,0.12);   color: #ff60fa; border: 1px solid rgba(201, 0, 204, 0.3); }
+.series-dot-Indycar { background: #de00d7; }
 
 
-.land-cell {
+.country-cell {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -144,7 +149,7 @@ tbody tr.past {
     font-size: 1rem;
 }
 
-.datum-sub {
+.date-sub {
     font-size: 0.75rem;
     color: var(--muted);
     margin-top: 2px;

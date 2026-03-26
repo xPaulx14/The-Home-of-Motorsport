@@ -213,7 +213,7 @@ const flags = {
   "Ukraine":                    "ua",
   "United Arab Emirates":       "ae",
   "Great Britain":              "gb",
-  "USA":                        "us",
+  "United States of America":   "us",
   "Uruguay":                    "uy",
   "Uzbekistan":                 "uz",
 
@@ -261,6 +261,7 @@ function seriesKey(series) {
         "Nascar": "NASCAR",
         "World Rally Championship (WRC)": "WRC",
         "MotoGP": "MotoGP",
+        "Indycar": "Indycar",
     };
     return map[series] || series;
 }
@@ -285,15 +286,15 @@ function renderTable(races) {
         const isPast = new Date(r.date_start) < today;
     
         const key = seriesKey(r.series);
-        const code   = flaggen[r.country] || 'unknown';
-        const flag = `<img src="The-Home-of-Motorsport/assets/media/images/flags/${code}.png" 
+        const code   = flags[r.country] || 'unknown';
+        const flag = `<img src="assets/media/images/flags/${code}.svg" 
                  alt="${r.country}" 
                  style="width:28px; height:20px; object-fit:cover; border-radius:2px;">`;
         const date = formatDate(r.date_start, r.date_ending);
     
         let statusHtml = '';
         if (isNext) {
-        statusHtml = `<span class="status-badge status-next">Next Race</span`;
+        statusHtml = `<span class="status-badge status-next">Next Race</span>`;
         }   else if (isPast) {
         statusHtml = `<span class="status-badge status-past">✓</span>`;
         }   else {
@@ -305,7 +306,6 @@ function renderTable(races) {
         if (isPast) tr.classList.add('past');
 
         tr.innerHTML = `
-            <td>${r.id}</td>
             <td>
                 <span class="series-badge series-${key}">
                 <span class="series-dot series-dot-${key}"></span>
@@ -334,17 +334,17 @@ function renderTable(races) {
 }
 
 async function loadRaces() {
-    const files = ['f1', 'wec', 'dtm', 'nascar', 'wrc', 'motogp'];
+    const files = ['f1', 'wec', 'dtm', 'nascar', 'wrc', 'motogp', "indycar"];
     let all = [];
 
     const promises = files.map(d =>
-        fetch(`data/${d}.json`)
+        fetch(`assets/data/${d}.json`)
             .then(r => { if (!r.ok) throw new Error(); return r.json(); })
             .catch(() => [])
     );
 
      const results = await Promise.all(promises);
-  alle = results.flat();
+  all = results.flat();
 
   renderTable(all);
 }
